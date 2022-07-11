@@ -1,14 +1,15 @@
 import java.util.Scanner;
 
 public class DesenMetot {
-static int sayi;
-static String cikti2 = "";
-    static int sartan(int n){
+    static int sayi;
+    static String cikti2 = "";
+
+    static int sartan(int n) {
         int cikti = n + 5;
-        if(n == sayi){
+        if (n == sayi) {
             System.out.println(cikti2);
             return 0;
-        }else{
+        } else {
             cikti2 += "," + cikti;
             sartan(cikti);
         }
@@ -19,7 +20,7 @@ static String cikti2 = "";
     static int sazalan(int n) {
         int cikti = n - 5;
         if (cikti <= 0) {
-           cikti2 += "," + cikti;
+            cikti2 += "," + cikti;
             sartan(cikti);
         } else {
             cikti2 += "," + cikti;
